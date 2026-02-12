@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MC Builds | AI Minecraft Build Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="badge">MC Builds</p>
+      <h1>Design Infinite Minecraft Structures with AI</h1>
+      <p>
+        Pick your available blocks, click <strong>Generate</strong>, and let MC Builds create
+        unique structure ideas with material lists and a step-by-step picture guide.
+      </p>
+      <a href="#generator" class="cta">Start Building</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel" id="about">
+      <h2>How MC Builds Helps Players</h2>
+      <p>
+        MC Builds is made for Minecraft players who want creative guidance fast. The AI engine
+        combines your selected blocks into build plans for homes, towers, farms, bridges, and more.
+        Every generated build includes exact material counts plus illustrated steps so players can
+        follow along in survival or creative mode.
+      </p>
+    </section>
+
+    <section class="panel" id="generator">
+      <h2>1) Select Blocks</h2>
+      <p>Choose the blocks/items you want to build with:</p>
+      <div class="block-grid" id="blockList"></div>
+      <button id="generateBtn" class="cta cta--secondary">Generate Build</button>
+      <p id="message" class="message" aria-live="polite"></p>
+    </section>
+
+    <section class="panel hidden" id="results">
+      <h2>2) Generated Build</h2>
+      <div class="result-card">
+        <h3 id="buildTitle"></h3>
+        <p id="buildDescription"></p>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <h3>Material List</h3>
+          <ul id="materials"></ul>
+        </div>
+        <div>
+          <h3>Step-by-Step Picture Guide</h3>
+          <div id="steps" class="steps"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>MC Builds • Build smarter, craft faster, stay inspired.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
